@@ -148,38 +148,50 @@
             </div>
         </section>
 
+
         <section id="contact" class="contact section-padding">
-            <div class="container">
-                <h2 class="section-title">Ready to Transform Your Data? Let's Talk.</h2>
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p><strong>Direct Contact:</strong></p>
-                    <p>Email: <a href="mailto:naveen.thaduru@gmail.com">naveen.thaduru@gmail.com</a></p>
-                    <p>Phone: <a href="tel:+91 9666954***">+91 9666954***</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/naveen-thaduru" target="_blank">linkedin.com/in/naveen-thaduru</a></p>
-                </div>
-                <p class="cta-reinforce">Schedule Your Free Data Audit Today and Discover Your Business's Untapped Potential!</p>
-            </div>
+          <div class="contact-content-wrapper">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="contact-intro">Have a project in mind or just want to say hello? Fill out the form below!</p>
+
+    <form name="contact" method="POST" data-netlify="true" action="/success.html" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+
+        <p class="hidden">
+            <label>Don’t fill this out if you're human:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+            <p>&copy; 2025 Data Driller. All rights reserved.</p>
         </div>
     </footer>
 

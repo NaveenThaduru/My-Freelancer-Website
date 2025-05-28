@@ -1,0 +1,10 @@
+Commands to run after changes in the files.
+
+First commands:
+
+git add .
+git commit -m "Added feature: Updated about section image position"
+
+Second Command:
+
+git push origin main
